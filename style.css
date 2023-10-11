@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.image{
+    background-image: url(./Beautiful_Sunrising_Nature_Image-2649872053.jpg);
+    background-size: cover ;
+    width: 40%;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.content{
+    width: 40%;
+    border-radius: 1rem;
+    background-color: #FFE5E2;
+    height: 30rem;
+}
+
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 13%;
+    cursor: pointer;
+}
+
+.tabs button{
+    width: 33.33%;
+    height: 100%;
+    letter-spacing: 0.25rem;
+    font-size: 1.2rem;
+    color: #000114;
+    border: none;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #FFE5E2;
+    transition: all 0.3s ease-in-out;
+}
+
+.notSelected{
+    background-color: #B6C9F0;
+    transition: all 0.3s ease-in-out;
+}
+.notSelected:hover{
+    background-color: #E93B81;
+}
+
+.btn1{
+    border-top-left-radius: 1rem;
+}
+.btn3{
+    border-top-right-radius: 1rem;
+}
+
+.text{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.text h2{
+    font-weight: 500;
+    color: #818180;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        align-items: flex-start;
+        padding: 2rem 0; 
+    }
+
+    main{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .image{
+        width: 80%;
+        height: 15rem;
+    }
+
+    .content{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1150px){
+    .image{
+        width: 45%;
+        height: 35rem;
+    }
+    .content{
+        width: 45%;
+        height: auto;
+    }
+}
